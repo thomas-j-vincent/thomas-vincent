@@ -1,0 +1,1 @@
+document.getElementsByClassName("menu").innerText = "Hello World";

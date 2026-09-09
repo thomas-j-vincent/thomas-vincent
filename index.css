@@ -1,0 +1,19 @@
+*{
+    background-color:cornsilk;
+    border-color: red;
+    border-width: 1px;
+
+}
+.menuBar {
+    font-size: large;
+    color:black;
+    border-width: 2px;
+    border-color:blue;
+    background-color: aliceblue;
+}
+.flexcontainer>div {
+    display: flex;
+    position: sticky;
+    border-width: 2px;
+    border-color:blue;
+}
