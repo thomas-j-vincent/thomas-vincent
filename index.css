@@ -2,18 +2,22 @@
     background-color:cornsilk;
     border-color: red;
     border-width: 1px;
+}
+.menu, 
+.contact{
+    padding: 5px;
+    position: fixed;
+    top: 20px;
+    z-index: 100;
+    background-color: aqua;
+    border-radius: 5px;
+    opacity: 50px;
+    width: 100px;
+}
+.contact{
+    right:20px;
+}
 
-}
-.menuBar {
-    font-size: large;
-    color:black;
-    border-width: 2px;
-    border-color:blue;
-    background-color: aliceblue;
-}
-.flexcontainer>div {
-    display: flex;
-    position: sticky;
-    border-width: 2px;
-    border-color:blue;
+.menu{
+    left: 20px;
 }

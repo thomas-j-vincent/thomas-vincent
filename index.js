@@ -1,2 +1,2 @@
-document.getElementsByClassName("menu").innerText = "Hello World";
+document.getElementById("a").innerText = "Menu2";
 console.log(5 + 6);
