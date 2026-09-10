@@ -88,15 +88,14 @@ html, body{
     background-color: DodgerBlue;
     border-radius: 5px;
     transform-origin: center;
-    transition: none;
+    transition: scale 0.15s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     /*overflow: hidden; CHANGED VIA CHATGPt*/
 
 }
-/* change
 .flex:hover{
     transform: scale(1.0667);
-}*/
+}
 .A{
     /*position: absolute; change 3
     bottom: 500px;
@@ -106,6 +105,9 @@ html, body{
     border-radius: 5px;
     margin: 20px auto; changed new line*/
     transform: translateY(0px);
+}
+.A:hover{
+    transform: scale(1.0667);
 }
 .B{
     /*position: absolute; chnage 4

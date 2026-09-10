@@ -18,6 +18,16 @@ const spacing = boxHeight + gap;
 
 let scrollPosition = 0;
 
+boxes.forEach(box => {
+
+    box.addEventListener("mouseenter", function() {
+        box.classList.add("hovered");
+    });
+    box.addEventListener("mouseleave", function() {
+        box.classList.remove("hovered");
+    });
+});
+
 function updateBoxes() {
     boxes.forEach((box, index) => {
 
@@ -33,13 +43,25 @@ function updateBoxes() {
         else{
             box.style.color = `black`;
         }
+
+        let newPosition;
+
         if (position < -boxHeight) {
-            const newPosition = position + boxes.length * spacing;
-            box.style.transform = `translateY(${newPosition}px)`;
+            newPosition = position + boxes.length * spacing;
+           // box.style.transform = `translateY(${newPosition}px)`;
             // this was meconsole.log(box, "cycled");
         } else{
-            box.style.transform = `translateY(${position}px)`;
+            newPosition = position;
+           // box.style.transform = `translateY(${position}px)`;
         }
+
+        if(box.classList.contains("hovered")) {
+            box.style.transform = 
+            `translateY(${newPosition}px) scale(1.0667)`;
+        } else {
+            box.style.transform = 
+                `translateY(${newPosition}px)`;
+        };
         //console.log("pos2", position)
     });
 }
@@ -50,13 +72,10 @@ window.addEventListener("wheel", function(event) {
     event.preventDefault();
     
     scrollPosition += event.deltaY;
-    //console.log(event.deltaY)
-
-   // scrollPosition = Math.max(
-     //   0,
-       // Math.min(this.scrollPosition, maxScroll)
-   // );
 
     updateBoxes();
 }, {passive: false});
+
+
+
 
