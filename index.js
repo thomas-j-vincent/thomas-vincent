@@ -49,17 +49,17 @@ function updateBoxes() {
         const position = 
         ((index * spacing - scrollPosition + boxHeight) % cycleHeight + cycleHeight) % cycleHeight - boxHeight;
 
-        if (position < 0) {
-            box.style.color = `red`;
+       // if (position < 0) {
+        //    box.style.color = `#b6b6b6`;
             //box.style.opacity = 
             //`0.5`;
             // this was meconsole.log(box, "touching");
-        }
-        else{
-            box.style.color = `black`;
+        //}
+        //else{
+          //  box.style.color = `black`;
            // box.style.opacity = 
            // `1`;
-        }
+        //}
 
         let newPosition;
         let opacity = 1
