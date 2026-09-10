@@ -82,7 +82,7 @@ html, body{
     align-items: center;
     justify-content: center;
     width: 20%; /*removed by gpt */
-    aspect-ratio: 1/1;
+    aspect-ratio: 1.5/1;
     pointer-events: auto; /* added by gpt*/
     text-align: center;
     background-color: DodgerBlue;
@@ -91,6 +91,17 @@ html, body{
     transition: scale 0.15s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     /*overflow: hidden; CHANGED VIA CHATGPt*/
+
+}
+.flex::before {
+    content: "Engineering";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 35%;
+    height: 20px;
+    background: dodgerblue;
+    border-radius: 8px 8px 0 0 ;
 
 }
 .flex:hover{
@@ -117,7 +128,7 @@ html, body{
     height: 150px;
     border-radius: 5px;
     margin: 20px auto;  changed new line*/
-    transform: translateY(210px);
+    transform: translateY(200px);
 }
 .C{
     /*position: absolute; change 5
@@ -134,4 +145,28 @@ html, body{
     /*grid-area: flexbox;*/ 
     position: relative;
     /*overflow: hidden;*/
+}
+.menu, 
+.contact{
+    padding: 5px;
+    position: fixed;
+    bottom: 170px;
+    z-index: 100;
+    background-color: #b6b6b6;
+    opacity: 0.3;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.menu:hover, .contact:hover{
+    transition: opacity, 2s ease;
+    opacity: 0.6;
+}
+.contact{
+    left:380px;
+    
+}
+.menu{
+    left: 250px;
 }

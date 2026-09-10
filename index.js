@@ -6,7 +6,7 @@ console.log(5 + 6);
 
 const boxes = document.querySelectorAll(".flex");
 const boxHeight = 150; // box height under .flex in css
-const gap = window.innerWidth * 0.20;
+const gap = (window.innerWidth * 0.15) - 5;
 //const maxScroll = 500;
 
 const spacing = boxHeight + gap;
@@ -107,6 +107,15 @@ window.addEventListener("wheel", function(event) {
 
     updateBoxes();
 }, {passive: false});
+
+const menu = document.getElementById("menu");
+const contact = document.getElementById("contact");
+menu.addEventListener("click", function(){
+    window.location.href = `menupage.html`;
+});
+contact.addEventListener("click", function(){
+    window.location.href = `contactpage.html`
+});
 
 
 
