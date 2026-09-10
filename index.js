@@ -21,29 +21,23 @@ let scrollPosition = 0;
 function updateBoxes() {
     boxes.forEach((box, index) => {
 
-       // const totalHeight = boxes.length * spacing;
-        //let position = (index * spacing - scrollPosition) % totalHeight;
-        //if (position < 0) {
-        //    position += totalHeight;
-        //}
-
-        //box.style.transforms
-        const position = 
-        index * spacing - scrollPosition;
-        if (position < 0) {
+        const position2 = 
+        ((index * spacing - scrollPosition) % (boxes.length * spacing) + (boxes.length * spacing)) % (boxes.length * spacing);
+        if (position2 < 0) {
             box.style.color = `red`;
-            console.log(box, "touching");
+            // this was meconsole.log(box, "touching");
         }
         else{
             box.style.color = `black`;
         }
-        if (position < -boxHeight) {
-            const newPosition = position + boxes.length * spacing;
+        if (position2 < -boxHeight) {
+            const newPosition = position2 + boxes.length * spacing;
             box.style.transform = `translateY(${newPosition}px)`;
-            console.log(box, "cycled");
+            // this was meconsole.log(box, "cycled");
         } else{
-            box.style.transform = `translateY(${position}px)`;
+            box.style.transform = `translateY(${position2}px)`;
         }
+        console.log("pos2", position2)
     });
 }
 
