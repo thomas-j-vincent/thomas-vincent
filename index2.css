@@ -81,8 +81,8 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px; /*removed by gpt */
-    height: 150px; /* the box height parameter*/
+    width: 20%; /*removed by gpt */
+    aspect-ratio: 1/1;
     pointer-events: auto; /* added by gpt*/
     text-align: center;
     background-color: DodgerBlue;

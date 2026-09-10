@@ -6,20 +6,13 @@ console.log(5 + 6);
 
 const boxes = document.querySelectorAll(".flex");
 const boxHeight = 150; // box height under .flex in css
-const gap = 100;
+const gap = window.innerWidth * 0.20;
 //const maxScroll = 500;
 
 const spacing = boxHeight + gap;
 
 let scrollPosition = 0;
 let specifier;
-
-//if (boxes.classList.contains("a")){
-//    specifier = "a";
-//} else if (boxes.classList.contains("b")){
-//    specifier = "b";
-//} else {specifier = "c";
-//}
 
 boxes.forEach(box => {
 
@@ -31,10 +24,18 @@ boxes.forEach(box => {
         box.classList.remove("hovered");
         updateBoxes();
     });
-   // box.addEventListener("click", function(){
-     //       window.location.href = `${specifier}page.html`;
-       //     updateBoxes();
-    //})
+    box.addEventListener("click", function(){
+    if (box.classList.contains("a")){
+        specifier = "a";
+    } else if (box.classList.contains("b")){
+        specifier = "b";
+    } else {specifier = "c";
+    }
+
+        window.location.href = `${specifier}page.html`;
+        updateBoxes();
+        console.log(specifier)
+    })
 });
 
 function updateBoxes() {
