@@ -19,6 +19,7 @@ boxes.forEach(box => {
         box.classList.add("hovered");
         console.log("hovered")
         //updateBoxes(scrollPosition, fadeDistance);
+        console.log("lets test this")
         scrollOnly()
     });
     box.addEventListener("mouseleave", function() {

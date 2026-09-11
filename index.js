@@ -12,6 +12,7 @@ const spacing = boxHeight + gap;
 
 let scrollPosition = 0;
 const fadeDistance = 200;
+
 let specifier;
 
 boxes.forEach(box => {
