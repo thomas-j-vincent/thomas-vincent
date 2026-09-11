@@ -1,8 +1,10 @@
 //document.getElementById("a").innerText = "Menu2";
-document.getElementById("name2").innerText="Thomas Vincent";
-document.getElementById("name3").innerText="Quantitative analyst";
+console.log(window.innerWidth)
+console.log((0.6* window.innerWidth))
+console.log((0.6* window.innerWidth)- (150*4)/5)
 
 console.log(5 + 6);
+
 
 const boxes = document.querySelectorAll(".flex");
 const boxHeight = 150; // box height under .flex in css
@@ -32,7 +34,7 @@ boxes.forEach(box => {
     } else {specifier = "c";
     }
 
-        window.location.href = `${specifier}page.html`;
+        window.location.href = `page.html?q=${encodeURIComponent(specifier)}`;
         updateBoxes();
         console.log(specifier)
     })
