@@ -18,6 +18,7 @@ html, body{
     border-bottom-style: solid;
     border-bottom-color: #d1d1d6;
     border-bottom-width: 1px;
+    z-index: 100;
 }
 .menu{
     width:40%;
@@ -56,12 +57,12 @@ html, body{
     content: "";
     padding: 5px;
     position: fixed;
-    top: 50px;
-    left: 255px;
+    top: 0px;
+    left: 0px;
     z-index: 80;
     background-color: #fFfFfF;
-    width: 80%;
-    height: 100px;
+    width: 100%;
+    height: 150px;
     text-align: center;
 }
 .contact{
@@ -77,17 +78,93 @@ html, body{
     height: 60px;
     text-align: center;
 }
-/*
+
 .A{
-    transform: translate(-258px, 100px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(-258px, 100px);*/
 }
 .B{
-    transform: translate(-258px, -50px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(228px, 0px);*/
 }
 .C{
-    transform: translate(-258px, -200px );
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(358px, 00px );*/
 }
 .D{
-    transform: translate(-258px, -350px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(558px, 0px);*/
+}
+.E{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(208px, 00px);*/
+}
+.F{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(228px, 0px);*/
+}
+.G{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(358px, 00px );*/
+}
+.H{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 80;
+    /*transform: translate(558px, 0px);*/
 }
 /*calc((60vw - 150* 4)/5)*/
